@@ -1,0 +1,13 @@
+
+.Profile_Pic_Box{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    background-image: url(image/9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Profile_Pic_Box .Profile_Pic{
+    height: 100%;
+}

@@ -1,0 +1,17 @@
+//* first create a data base with the name   "student-info"  by using CMD or phpmyadmin*//
+
+
+
+//* Create a student table with the following column *//
+
+CREATE TABLE `student-info`.
+`users` ( `id` INT NOT NULL AUTO_INCREMENT ,
+ `name` VARCHAR(50) NOT NULL ,
+ `email` VARCHAR(80) NOT NULL ,
+ `password` VARCHAR(255) NOT NULL ,
+ PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
+//* make sure to turn on Apache and MySQL in XAMPP while running the website.
+Website folder should be in "htdocs" folder in XAMPP or it will not work.. *//
