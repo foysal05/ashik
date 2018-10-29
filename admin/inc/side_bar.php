@@ -44,6 +44,18 @@
                         <p>Booking</p>
                     </a>
                 </li>
+                <li>
+                    <a href="hall_report">
+                        <i class="pe-7s-graph"></i>
+                        <p>Hall Report</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_hall">
+                        <i class="pe-7s-note"></i>
+                        <p>Movie Assigning</p>
+                    </a>
+                </li>
                <!--  <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>

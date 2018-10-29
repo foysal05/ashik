@@ -244,7 +244,7 @@ if (isset($_GET['id'])) {
 						<h4 class="title">Booking</h4>
 						<!--  <p class="category">Here is a subtitle for this table</p> -->
 					</div>
-					<div class="content table-responsive table-full-width" style="font-size: 2em">
+					<div class="content table-responsive table-full-width" style="font-size: 2em;">
 						<form action="db/db_booking" method="post">
 
 							<input type="hidden" value="<?php echo $_SESSION['customer_id'];?>" name="id">
@@ -252,12 +252,16 @@ if (isset($_GET['id'])) {
 
 							<table>
 								<tr>
-									<td>Date :</td>
-									<td><input type="date" required="" name="date"></td>
+									<td>Movie Name :</td>
+		<td style="text-align: center;"><input readonly="" style=" border: none;" required="" type="text" value="<?php echo $_GET['name']; ?>"></td>
 								</tr>
 								<tr>
-									<td>Price :</td>
-									<td><input readonly="" required="" type="text" value="<?php echo $_GET['price']; ?>" name="price"></td>
+									<td>Date :</td>
+									<td><input type="text" id="datepicker" class="form-control" readonly="" required="" name="date"></td>
+								</tr>
+								<tr>
+									<td>Price : (BDT)</td>
+									<td style="text-align: center;"><input readonly="" style=" border: none;" required="" type="text" value="<?php echo $_GET['price']; ?>" name="price"></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -289,7 +293,7 @@ if (isset($_GET['id'])) {
                                     <thead>
                                        <th style="color: #FF8D1B; text-align: center;">Movie Name</th>
                                         <th style="color: #FF8D1B; text-align: center;">Date</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Price</th>
+                                        <th style="color: #FF8D1B; text-align: center;">Price(BDT)</th>
                                         
                                     </thead>
                                     <tbody>
@@ -304,9 +308,9 @@ if (isset($_GET['id'])) {
 
 
                                               echo"<tr>";
-                                              echo "<td style='text-align: center'>".$row['movie_name']."</td>";
-                                              echo "<td style='text-align: center'>".$row['date']."</td>";
-                                              echo "<td style='text-align: center'>".$row['price']."</td>";
+                                              echo "<td style='text-align: center; color:black;'>".$row['movie_name']."</td>";
+                                              echo "<td style='text-align: center; color:black;'>".$row['date']."</td>";
+                                              echo "<td style='text-align: center; color:black;'>".$row['price']."</td>";
                                               
                                               echo"</tr>";
 
@@ -419,6 +423,18 @@ if (isset($_GET['id'])) {
 			});
 		</script>
 		<!-- //here ends scrolling icon -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+    	 minDate: 'today',
+    });
+   
+  } );
+  </script>
 	</body>
 	</html>
 	<?php

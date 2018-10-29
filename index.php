@@ -5,14 +5,14 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>One Movies an Entertainment | Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="One Movies Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<title>One Movies an Entertainment | Home</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="One Movies Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -38,15 +38,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 	$(document).ready(function() { 
 		$("#owl-demo").owlCarousel({
-	 
+
 		  autoPlay: 3000, //Set AutoPlay to 3 seconds
-	 
+
 		  items : 5,
 		  itemsDesktop : [640,4],
 		  itemsDesktopSmall : [414,3]
-	 
+
 		});
-	 
+
 	}); 
 </script> 
 <!-- //banner-bottom-plugin -->
@@ -64,24 +64,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 
 	<?php
 
-if (isset($_GET['success'])) {
-	echo "<script>alert('Customer account created successfully');</script>";
-}else if (isset($_GET['exist'])) {
-	echo "<script>alert('This email address already exist, Please use another email address');</script>";
-}else if (isset($_GET['error'])) {
-	echo "<script>alert('You Entered Wrong Email or Password');</script>";
-}else if (isset($_GET['bookingsuccess'])) {
-	echo "<script>alert('Booking Successfully');</script>";
-}
+	if (isset($_GET['success'])) {
+		echo "<script>alert('Customer account created successfully');</script>";
+	}else if (isset($_GET['exist'])) {
+		echo "<script>alert('This email address already exist, Please use another email address');</script>";
+	}else if (isset($_GET['error'])) {
+		echo "<script>alert('You Entered Wrong Email or Password');</script>";
+	}else if (isset($_GET['bookingsuccess'])) {
+		echo "<script>alert('Booking Successfully');</script>";
+	}
 
 
-?>
-<!-- header -->
+	?>
+	<!-- header -->
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
@@ -115,9 +115,9 @@ if (isset($_GET['success'])) {
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //header -->
+	<!-- //header -->
 
-<!-- bootstrap-pop-up -->
+	<!-- bootstrap-pop-up -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -129,31 +129,31 @@ if (isset($_GET['success'])) {
 					<div class="modal-body">
 						<div class="w3_login_module">
 							<div class="module form-module">
-							  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-								<div class="tooltip">Click Me</div>
-							  </div>
-							  <div class="form">
-								<h3>Login to your account</h3>
-								<form action="db/db_login.php" method="post">
-								  <input type="email" name="email" placeholder="Email" required="">
-								  <input type="password" name="password" placeholder="Password" required="">
-								  <input type="submit" name="login" value="Login">
-								</form>
-							  </div>
-							  <div class="form">
-								<h3>Create an account</h3>
-								<form action="db/db_login.php" method="post">
-								  <input type="text" name="firstname" placeholder="Firstname" required="">
-								  <input type="text" name="lastname" placeholder="Lastname" required="">
-								 
-								  <input type="email" name="email" placeholder="Email Address" required="">
-								   <input type="password" name="password" placeholder="Password" required="">
-								  <input type="text" name="phone" placeholder="Phone Number" required="">
-								  <input type="text" name="address" placeholder="Address" required="">
-								  <input type="submit" name="registration" value="Register">
-								</form>
-							  </div>
-							  <div class="cta"><a href="#">Forgot your password?</a></div>
+								<div class="toggle"><i class="fa fa-times fa-pencil"></i>
+									<div class="tooltip">Click Me</div>
+								</div>
+								<div class="form">
+									<h3>Login to your account</h3>
+									<form action="db/db_login.php" method="post">
+										<input type="email" name="email" placeholder="Email" required="">
+										<input type="password" name="password" placeholder="Password" required="">
+										<input type="submit" name="login" value="Login">
+									</form>
+								</div>
+								<div class="form">
+									<h3>Create an account</h3>
+									<form action="db/db_login.php" method="post">
+										<input type="text" name="firstname" placeholder="Firstname" required="">
+										<input type="text" name="lastname" placeholder="Lastname" required="">
+
+										<input type="email" name="email" placeholder="Email Address" required="">
+										<input type="password" name="password" placeholder="Password" required="">
+										<input type="text" name="phone" placeholder="Phone Number" required="">
+										<input type="text" name="address" placeholder="Address" required="">
+										<input type="submit" name="registration" value="Register">
+									</form>
+								</div>
+								<div class="cta"><a href="#">Forgot your password?</a></div>
 							</div>
 						</div>
 					</div>
@@ -171,15 +171,15 @@ if (isset($_GET['success'])) {
 		  $(this).children('i').toggleClass('fa-pencil');
 		  // Switches the forms  
 		  $('.form').animate({
-			height: "toggle",
-			'padding-top': 'toggle',
-			'padding-bottom': 'toggle',
-			opacity: "toggle"
+		  	height: "toggle",
+		  	'padding-top': 'toggle',
+		  	'padding-bottom': 'toggle',
+		  	opacity: "toggle"
 		  }, "slow");
 		});
 	</script>
-<!-- //bootstrap-pop-up -->
-<!-- nav -->
+	<!-- //bootstrap-pop-up -->
+	<!-- nav -->
 	<div class="movies_nav">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -198,22 +198,22 @@ if (isset($_GET['success'])) {
 							<table>
 								<tr>
 									
-								
-<?php
-include('db/db.php');
- $query="SELECT * FROM movie where status='Continue' ORDER BY mid DESC";
-                                       $result=mysqli_query($con,$query);
+
+									<?php
+									include('db/db.php');
+									$query="SELECT * FROM movie where status='Continue' ORDER BY mid DESC";
+									$result=mysqli_query($con,$query);
                 //echo mysqli_error();
-                                       if(mysqli_num_rows($result)>0){
+									if(mysqli_num_rows($result)>0){
 
-                                          while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                                          	echo "<td><h2 style='color:white;'>".$row['movie_name'].",  </h2></td>";
-                                          }
-                                      }
+										while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
+											echo "<td><h2 style='color:white;'>".$row['movie_name'].",  </h2></td>";
+										}
+									}
 
-?>
+									?>
 
-</tr>
+								</tr>
 							</table>
 						</marquee>
 					</nav>
@@ -221,83 +221,83 @@ include('db/db.php');
 			</nav>	
 		</div>
 	</div>
-<!-- //nav -->
-<?php
+	<!-- //nav -->
+	<?php
 
-include('db/db.php');
+	include('db/db.php');
 //include('inc/banner.php');
-if (isset($_GET['loginrequired'])) {
-	echo "<script>alert('Please Login for complete Booking');</script>";
-}
-?>
+	if (isset($_GET['loginrequired'])) {
+		echo "<script>alert('Please Login for complete Booking');</script>";
+	}
+	?>
 
-       <div class="container-fluid" style="color: #FF8D1B">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Movie List</h4>
-                                <!--  <p class="category">Here is a subtitle for this table</p> -->
-                            </div>
-                            <div class="content table-responsive table-full-width" style="font-size: 2em">
+	<div class="container-fluid" style="color: #FF8D1B">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="header">
+						<h4 class="title">Movie List</h4>
+						<!--  <p class="category">Here is a subtitle for this table</p> -->
+					</div>
+					<div class="content table-responsive table-full-width" style="font-size: 2em">
 
-                                <table class="table table-hover table-striped" style="color: #FF8D1B" >
-                                    <thead>
-                                        <th style="color: #FF8D1B; text-align: center;">Movie Name</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Genre</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Release</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Stars</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Trailer</th>
-                                        
-                                        <th style="color: #FF8D1B; text-align: center;">Director</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Price</th>
-                                        <th style="color: #FF8D1B; text-align: center;">Book</th>
-                                        
-                                    </thead>
-                                    <tbody>
-                                       <?php
+						<table class="table table-hover table-striped" style="color: #FF8D1B" >
+							<thead>
+								<th style="color: #FF8D1B; text-align: center;">Movie Name</th>
+								<th style="color: #FF8D1B; text-align: center;">Genre</th>
+								<th style="color: #FF8D1B; text-align: center;">Release</th>
+								<th style="color: #FF8D1B; text-align: center;">Stars</th>
+								
 
-                                       $query="SELECT * FROM movie where status='Continue' ORDER BY mid DESC";
-                                       $result=mysqli_query($con,$query);
+								<th style="color: #FF8D1B; text-align: center;">Director</th>
+								<th style="color: #FF8D1B; text-align: center;">Price</th>
+								<th style="color: #FF8D1B; text-align: center;">Book</th>
+
+							</thead>
+							<tbody>
+								<?php
+
+								$query="SELECT * FROM movie where status='Continue' ORDER BY mid DESC";
+								$result=mysqli_query($con,$query);
                 //echo mysqli_error();
-                                       if(mysqli_num_rows($result)>0){
+								if(mysqli_num_rows($result)>0){
 
-                                          while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
+									while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)){
 
 
-                                              echo"<tr>";
-                                              echo "<td style='text-align: center'>".$row['movie_name']."</td>";
-                                              echo "<td style='text-align: center'>".$row['genre']."</td>";
-                                              echo "<td style='text-align: center'>".$row['release']."</td>";
-                                              echo "<td style='text-align: center'>".$row['stars']."</td>";
-                                              echo "<td style='text-align: center'><a target='_blank' style='color:black; text-decoration: none;' href='trailer.php?view&link=".$row['trailer']."'>Trailer</a></td>"; 
-                                              echo "<td style='text-align: center'>".$row['director']."</td>";
-                                              echo "<td style='text-align: center'>".$row['price']."</td>";
-                                              
-                                         echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='book.php?book&id=".$row['mid']."&price=".$row['price']."'><button class='btn btn-danger'>Book</button></a></td>"; 
+										echo"<tr>";
+										echo "<td style='text-align: center'>".$row['movie_name']."</td>";
+										echo "<td style='text-align: center'>".$row['genre']."</td>";
+										echo "<td style='text-align: center'>".$row['release']."</td>";
+										echo "<td style='text-align: center'>".$row['stars']."</td>";
+										
+										echo "<td style='text-align: center'>".$row['director']."</td>";
+										echo "<td style='text-align: center'>".$row['price']."</td>";
 
-                                              echo"</tr>";
+										echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='book.php?book&id=".$row['mid']."&price=".$row['price']."&name=".$row['movie_name']."'><button class='btn btn-danger'>Book</button></a></td>"; 
 
-                                          }
-                                      }else{
-                                        echo"<tr>";
-                                        echo "<td>Not Found</td>";
-                                        echo"</tr>";
-                                      }
+										echo"</tr>";
 
-                                      ?>
-                                  </tbody>
-                              </table>
+									}
+								}else{
+									echo"<tr>";
+									echo "<td>Not Found</td>";
+									echo"</tr>";
+								}
 
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+								?>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- pop-up-box -->  
-		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 	<!--//pop-up-box -->
 	<div id="small-dialog" class="mfp-hide">
 		<iframe src="https://player.vimeo.com/video/164819130?title=0&byline=0"></iframe>
@@ -310,22 +310,22 @@ if (isset($_GET['loginrequired'])) {
 	</div>
 	<script>
 		$(document).ready(function() {
-		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
-			type: 'inline',
-			fixedContentPos: false,
-			fixedBgPos: true,
-			overflowY: 'auto',
-			closeBtnInside: true,
-			preloader: false,
-			midClick: true,
-			removalDelay: 300,
-			mainClass: 'my-mfp-zoom-in'
-		});
-																		
+			$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+
 		});
 	</script>
-<!-- //Latest-tv-series -->
-<!-- footer -->
+	<!-- //Latest-tv-series -->
+	<!-- footer -->
 	<div class="footer" style="margin-top:200px;">
 		<div class="container">
 			<div class="w3ls_footer_grid">
@@ -354,25 +354,25 @@ if (isset($_GET['loginrequired'])) {
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //footer -->
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
-</script>
-<!-- //Bootstrap Core JavaScript -->
-<!-- here stars scrolling icon -->
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".dropdown").hover(            
+				function() {
+					$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+					$(this).toggleClass('open');        
+				},
+				function() {
+					$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+					$(this).toggleClass('open');       
+				}
+				);
+		});
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -382,12 +382,12 @@ $(document).ready(function(){
 				scrollSpeed: 1200,
 				easingType: 'linear' 
 				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+				*/
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
 			});
-	</script>
-<!-- //here ends scrolling icon -->
-</body>
-</html>
+		</script>
+		<!-- //here ends scrolling icon -->
+	</body>
+	</html>

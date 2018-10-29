@@ -8,7 +8,7 @@ if (isset($_POST['book'])) {
 $query="INSERT INTO booking values('','$date','$movie','$price','$id')";
 //echo $query;
 	$result=mysqli_query($con,$query);
-	header('location:../index?bookingsuccess');
+	header('location:../book?bookingsuccess');
 
 }
 

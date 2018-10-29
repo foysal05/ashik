@@ -7,11 +7,11 @@ if (isset($_POST['add'])) {
 	$genre=$_POST['genre'];
 	$release=$_POST['release'];
 	$director=$_POST['director'];
-	$trailer=$_POST['trailer'];
+	
 	$price=$_POST['price'];
 	//$description=$_POST['description'];
 	$description = mysqli_real_escape_string($con, $_POST['description']);
-	$query="INSERT INTO movie values('','$name','$genre','$trailer','$release','$director','$stars','$description','Continue','$price')";
+	$query="INSERT INTO movie values('','$name','$genre','$release','$director','$stars','$description','Continue','$price')";
 //echo $query;
 	$result=mysqli_query($con,$query);
 	if ($result=TRUE) {
@@ -29,12 +29,12 @@ if (isset($_POST['update'])) {
 	$genre=$_POST['genre'];
 	$release=$_POST['release'];
 	$director=$_POST['director'];
-	$trailer=$_POST['trailer'];
+	
 	$description=$_POST['description'];
 	$status=$_POST['status'];
 	$price=$_POST['price'];
 
-	$query="UPDATE movie set `movie_name`='$name', stars='$stars',genre='$genre',`release`='$release',director='$director',trailer='$trailer',description='$description',`status`='$status',price='$price' where mid='$id'";
+	$query="UPDATE movie set `movie_name`='$name', stars='$stars',genre='$genre',`release`='$release',director='$director',description='$description',`status`='$status',price='$price' where mid='$id'";
 	//echo $query;
 	$result=mysqli_query($con,$query);
 	if ($result=TRUE) {

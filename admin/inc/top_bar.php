@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['admin_login'])==TRUE) {
+    header('location:../../../index');
+}
+
+
+?>
+
   <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">

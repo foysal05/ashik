@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION['admin_login'])==TRUE) {
+ 
+?>
+
 <!doctype html>
 <html lang="en">
 <?php 
@@ -117,14 +123,7 @@ include('../db/db.php');
                                             </div>
                                         </div>
 
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>Trailer URL (Embed)</label>
-                                                    <input type="text" value="<?php if(isset($_GET['trailer'])){ echo $_GET['trailer'];}?>" class="form-control" placeholder="Trailer URL" name="trailer" >
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -179,7 +178,7 @@ include('../db/db.php');
                                         <th>Genre</th>
                                         <th>Release</th>
                                         <th>Stars</th>
-                                        <th>Trailer</th>
+                                        
                                         
                                         <th>Director</th>
                                         <th>Status</th>
@@ -203,12 +202,12 @@ include('../db/db.php');
                                               echo "<td style='text-align: center'>".$row['genre']."</td>";
                                               echo "<td style='text-align: center'>".$row['release']."</td>";
                                               echo "<td style='text-align: center'>".$row['stars']."</td>";
-                                              echo "<td style='text-align: center'><a target='_blank' style='color:black; text-decoration: none;' href='trailer.php?view&link=".$row['trailer']."'>Trailer</a></td>"; 
+                                              
                                               echo "<td style='text-align: center'>".$row['director']."</td>";
                                               echo "<td style='text-align: center'>".$row['status']."</td>";
                                               echo "<td style='text-align: center'>".$row['price']."</td>";
                                          // echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='customer_details.php?&id=".$row['mid']."'><button class='btn btn-info'>".$row['status']."</button></a></td>"; 
-                                              echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='movie.php?update&id=".$row['mid']."&name=".$row['movie_name']."&genre=".$row['genre']."&release=".$row['release']."&stars=".$row['stars']."&trailer=".$row['trailer']."&director=".$row['director']."&status=".$row['status']."&price=".$row['price']."&description=".$row['description']."'><button class='btn btn-info'>Edit</button></a></td>"; 
+                                              echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='movie.php?update&id=".$row['mid']."&name=".$row['movie_name']."&genre=".$row['genre']."&release=".$row['release']."&stars=".$row['stars']."&director=".$row['director']."&status=".$row['status']."&price=".$row['price']."&description=".$row['description']."'><button class='btn btn-info'>Edit</button></a></td>"; 
                                               echo "<td style='text-align: center'><a style='color:black; text-decoration: none;' href='db/db_movie.php?delete&id=".$row['mid']."'><button class='btn btn-danger'>Delete</button></a></td>"; 
 
                                               echo"</tr>";
@@ -260,3 +259,9 @@ include('../db/db.php');
 <script src="assets/js/demo.js"></script>
 
 </html>
+<?php
+}else{
+    header('location:../index');
+}
+
+?>
